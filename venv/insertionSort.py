@@ -1,4 +1,7 @@
-
+num=int(input("Enter the length of array"))
+list1=[]
+for i in range(0,num):
+    list1.append(input())
 
 def insertSort(arr):
     for i in range(1,len(arr)):
@@ -6,5 +9,5 @@ def insertSort(arr):
             if(arr[k]>arr[i]):
                 arr[i],arr[k]=arr[k],arr[i]
     return arr
-print(insertSort([3,4,1,2,7,5]))
+print(insertSort(list1))
 
