@@ -65,6 +65,7 @@ def mergeSort(arr,l,r):
 arr = [12, 11, 13, 5, 6, 7]
 n = len(arr)
 print ("Given array is")
+print(n)
 for i in range(n):
 	print ("%d" %arr[i]),
 
