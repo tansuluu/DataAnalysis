@@ -8,7 +8,7 @@ for i in range(num):
             res+="*"
         else:
             res+=".";
-        if (l+1)%k==0:
+        if (l+1)%j==0:
             print(res)
             res=""
     
