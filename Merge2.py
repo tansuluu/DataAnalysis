@@ -50,10 +50,9 @@ def merge(arr, l, m, r):
 # sub-array of arr to be sorted
 def mergeSort(arr,l,r):
 	if l < r:
-
 		# Same as (l+r)/2, but avoids overflow for
 		# large l and h
-		m = int((l+(r-1))/2)
+		m = (l+(r-1))//2
 
 		# Sort first and second halves
 		mergeSort(arr, l, m)
@@ -62,7 +61,7 @@ def mergeSort(arr,l,r):
 
 
 # Driver code to test above
-arr = [12, 11, 13, 5, 6, 7]
+arr = [12, 11, 13, 5, 6, 7,9]
 n = len(arr)
 print ("Given array is")
 print(n)
