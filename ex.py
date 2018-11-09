@@ -2,6 +2,12 @@ j,k=map(int,input().strip().split())
 l,n=map(int,input().strip().split())
 fistMatr=[]
 secondMatr=[]
+result=[]
+for b in range (j):
+    ar=[]
+    for a in range(n):
+        ar.append(0);
+    result.append(ar)
 for s in range(j):
     listTemp=list(map(int,input().strip().split()))
     fistMatr.append(listTemp)
@@ -9,11 +15,7 @@ for s in range(j):
 for p in range(l):
     listTemp=list(map(int,input().strip().split()))
     secondMatr.append(listTemp)
-for y in range(0,j):
-    for z in range(0,l):
-        l.append(0)
-    result.append(l)
-
+print(result)
 
 for i in range(len(fistMatr)):
    for j in range(len(secondMatr[0])):

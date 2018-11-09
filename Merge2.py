@@ -61,7 +61,7 @@ def mergeSort(arr,l,r):
 
 
 # Driver code to test above
-arr = [12, 11, 13, 5, 6, 7,9]
+arr = [9, 6, 1, 9, 7]
 n = len(arr)
 print ("Given array is")
 print(n)
@@ -73,4 +73,3 @@ print ("\n\nSorted array is")
 for i in range(n):
 	print ("%d" %arr[i]),
 
-# This code is contributed by Mohit Kumra

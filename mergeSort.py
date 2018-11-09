@@ -39,4 +39,4 @@ def comb(arr,l,m,r):
         i=i+1
     return arr
 
-print(mergeS([1,2,4,2,7,4],0,5))
+print(mergeS([9, 6, 1, 9, 7],0,4))
