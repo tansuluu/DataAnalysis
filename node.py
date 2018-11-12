@@ -28,8 +28,7 @@ class Node:
 
 class BinaryTree:
     root = None
-
-    def addNode(self,root, value):
+    def addNode(self, root, value):
         if root.get_value() == None:
             root = Node(value)
         elif root.get_value() > value:
@@ -39,11 +38,6 @@ class BinaryTree:
 
     def add(self,value):
         addNode(root, value)
-
-
-add(6)
-add(3)
-add(5)
 
 
 
