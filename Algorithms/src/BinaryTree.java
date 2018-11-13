@@ -16,17 +16,17 @@ public class BinaryTree {
 
     }
     private Node add(Node root, int value){
+        if(root==null){
+            return new Node(value);
+        }
         if(root.getValue()<value) {
-            if(root.getLeftChild()!=null)
-                add(root.getLeftChild(), value);
-            root.setLeftChild(new Node(value));
+            root.setLeftChild(add(root.getLeftChild(),value));
         }
-        else if(root.getValue()>=value){
-            if (root.getRightChild()!=null)
-                add(root.getRightChild(),value);
+        if(root.getValue()>=value){
+            root.setRightChild(add(root.getRightChild(),value));
+        }
 
-            root.setRightChild(new Node(value));
-        }
+        return root;
     }
 
     public Node getRoot() {
